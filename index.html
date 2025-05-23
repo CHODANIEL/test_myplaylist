@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.jpeg" alt="로고" class="logo-img"><h1>My Music</h1></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="#genre-section">플레이리스트</a></li>
+                <li><a href="#search">검색</a></li>
+                <li><a href="#profile">프로필</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 검색 섹션 -->
+    <section id="search" class="search-section">
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="노래, 아티스트, 플레이리스트 검색...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="search-results">
+                <!-- 검색 결과가 여기에 동적으로 추가됩니다 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 메인 콘텐츠 -->
+    <main>
+        <!-- 최근 추가된 플레이리스트 -->
+        <section class="recent-playlists">
+            <h2>최근 추가된 플레이리스트</h2>
+            <div class="playlist-grid">
+                <!-- 플레이리스트 카드 1 -->
+                <div class="playlist-card">
+                    <div class="playlist-cover">
+                        <img src="images/k-pop.jpeg" alt="K-POP 플레이리스트">
+                        <div class="playlist-overlay">
+                            <img src="images/play-button.jpeg" alt="재생 버튼" class="play-button">
+                        </div>
+                    </div>
+                    <div class="playlist-info">
+                        <h3>오늘의 K-POP</h3>
+                        <p>15곡</p>
+                    </div>
+                </div>
+
+                <!-- 플레이리스트 카드 2 -->
+                <div class="playlist-card">
+                    <div class="playlist-cover">
+                        <img src="images/td_jazz.jpeg" alt="재즈 플레이리스트">
+                        <div class="playlist-overlay">
+                            <img src="images/play-button.jpeg" alt="재생 버튼" class="play-button">
+                        </div>
+                    </div>
+                    <div class="playlist-info">
+                        <h3>잔잔한 재즈</h3>
+                        <p>12곡</p>
+                    </div>
+                </div>
+
+                <!-- 플레이리스트 카드 3 -->
+                <div class="playlist-card">
+                    <div class="playlist-cover">
+                        <img src="images/td_hiphop.jpeg" alt="힙합 플레이리스트">
+                        <div class="playlist-overlay">
+                            <img src="images/play-button.jpeg" alt="재생 버튼" class="play-button">
+                        </div>
+                    </div>
+                    <div class="playlist-info">
+                        <h3>힙합 클래식</h3>
+                        <p>20곡</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 장르별 플레이리스트 -->
+        <section id="genre-section" class="genre-section">
+            <h2>장르별 플레이리스트</h2>
+            <div class="genre-grid">
+                <a href="pop.html" class="genre-card pop">
+                    <img src="images/pop.jpeg" alt="팝 음악" class="genre-img">
+                    <h3>팝</h3>
+                </a>
+                <a href="rock.html" class="genre-card rock">
+                    <img src="images/rock.jpeg" alt="락 음악" class="genre-img">
+                    <h3>락</h3>
+                </a>
+                <a href="hiphop.html" class="genre-card hiphop">
+                    <img src="images/hiphop.jpeg" alt="힙합 음악" class="genre-img">
+                    <h3>힙합</h3>
+                </a>
+                <a href="jazz.html" class="genre-card jazz">
+                    <img src="images/jazz.jpeg" alt="재즈 음악" class="genre-img">
+                    <h3>재즈</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>&copy; 2024 My Music Playlist. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
